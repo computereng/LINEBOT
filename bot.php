@@ -21,12 +21,18 @@ if (!is_null($events['events'])) {
 			if ($text == 'Hello')
 			$messages = [
 				'type' => 'text',
-				'text' => 'I AM Proxima'
+				'text' => 'Hi'
 			];
-			else if ($text == 'Siam')
+			else if ($text == 'What your name')
 			$messages = [
 				'type' => 'text',
-				'text' => 'Computer Engneering'
+				'text' => 'My Name Is Proxima'
+			];
+
+			else if ($text == 'How Are You')
+			$messages = [
+				'type' => 'text',
+				'text' => 'I am Fine'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
