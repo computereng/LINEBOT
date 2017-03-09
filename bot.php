@@ -15,14 +15,13 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			
 
 			// Build message to reply back
-			if ($text == "hello")
-			{
+			if ($event['text'] == 'Hello')
 			$messages = [
 				'type' => 'text',
-				'text' => "I AM Proxima"
-			}
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
