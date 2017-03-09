@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 				'text' => 'My Name Is Proxima'
 			];
 
-			else if ($text == 'How Are You')
+			else if ($text == 'How are you')
 			$messages = [
 				'type' => 'text',
 				'text' => 'I am Fine'
