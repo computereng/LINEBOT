@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			{
 			$messages = [
 				'type' => 'text',
-				'text' => "I AM Proxima";
+				'text' => I AM Proxima
 			}
 			];
 
