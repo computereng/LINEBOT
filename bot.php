@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 			
 
 			// Build message to reply back
-			if ($event['message'] == 'Hello')
+			if ($text == 'Hello')
 			$messages = [
 				'type' => 'text',
 				'text' => $text
