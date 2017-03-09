@@ -17,9 +17,12 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
+			if (text == "Hello")
+			{
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => "I AM Proxima";
+			}
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
