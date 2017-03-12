@@ -1,6 +1,11 @@
 <?php
 $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVguSX6pqlYaJFRB/pLt/q/Ct5w4chCz8hShgIVBOzZYuYM1YPHg8FJ0KS4G8GD3T0iFv7qAbmBvIfFYElhJ+MRgXtQdB04t89/1O/w1cDnyilFU=';
 
+$conn = new Mongo('mongodb://ds129090.mlab.com:29090');
+$db = $conn->BOTLINE;
+
+// access collection
+$collection = $db->CMD;
 
 
 // Get POST body content
@@ -55,7 +60,7 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 			
-
+$collection->insert($data)
 			echo $result . "\r\n";
 		}
 	}
