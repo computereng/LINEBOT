@@ -9,8 +9,10 @@ $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVgu
 $collection = $db->CMD;
 
 
+
 // Get POST body content
 $content = file_get_contents('php://input');
+$collection->insert($content);
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
@@ -51,7 +53,6 @@ if (!is_null($events['events'])) {
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-			$collection->insert($post)
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
