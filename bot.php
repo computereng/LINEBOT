@@ -3,10 +3,10 @@ $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVgu
  $dbhost = 'ds129090.mlab.com:29090';
  $dbname = 'heroku_zpxln9vv';
 $conn = new Mongo('mongodb://ds129090.mlab.com:29090');
-$db = $conn->BOTLINE;
+//$db = $conn->BOTLINE;
 
 // access collection
-$collection = $db->CMD;
+//$collection = $db->CMD;
 
 
 // Get POST body content
@@ -51,7 +51,7 @@ if (!is_null($events['events'])) {
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-			$collection->insert($data)
+			//$collection->insert($data)
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
