@@ -1,9 +1,9 @@
 <?php
 $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVguSX6pqlYaJFRB/pLt/q/Ct5w4chCz8hShgIVBOzZYuYM1YPHg8FJ0KS4G8GD3T0iFv7qAbmBvIfFYElhJ+MRgXtQdB04t89/1O/w1cDnyilFU=';
- $dbhost = 'heroku_zpxln9vv:vcu626he9dq4mjrhpja1uclh8e@ds129090.mlab.com:29090/heroku_zpxln9vv';
+ $dbhost = 'vcu626he9dq4mjrhpja1uclh8e@ds129090.mlab.com:29090/heroku_zpxln9vv';
  $dbname = 'heroku_zpxln9vv';
- $m = new Mongo("mongodb://$dbhost");
- $db = $m->$dbname;
+ $m = new Mongo("mongodb://heroku_zpxln9vv:vcu626he9dq4mjrhpja1uclh8e@ds129090.mlab.com:29090/heroku_zpxln9vv");
+ $db = $m->'heroku_zpxln9vv';
 
 // access collection
 $collection = $db->CMD;
