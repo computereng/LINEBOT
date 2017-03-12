@@ -2,7 +2,7 @@
 $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVguSX6pqlYaJFRB/pLt/q/Ct5w4chCz8hShgIVBOzZYuYM1YPHg8FJ0KS4G8GD3T0iFv7qAbmBvIfFYElhJ+MRgXtQdB04t89/1O/w1cDnyilFU=';
  //$dbhost = 'ds129090.mlab.com:29090';
 // $dbname = 'heroku_zpxln9vv';
-$conn = new Mongo('mongodb://ds129090.mlab.com:29090');
+//$conn = new Mongo('mongodb://ds129090.mlab.com:29090');
 //$db = $conn->BOTLINE;
 
 // access collection
