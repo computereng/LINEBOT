@@ -1,5 +1,7 @@
 <?php
 $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVguSX6pqlYaJFRB/pLt/q/Ct5w4chCz8hShgIVBOzZYuYM1YPHg8FJ0KS4G8GD3T0iFv7qAbmBvIfFYElhJ+MRgXtQdB04t89/1O/w1cDnyilFU=';
+$db = $conn->Data;
+
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -52,6 +54,9 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
+			// access collection
+	$collection = $db->Collection;
+	$collection->insert($mmessages)
 
 			echo $result . "\r\n";
 		}
