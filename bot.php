@@ -6,7 +6,7 @@ $access_token = 'LZArldUUHwHc6ROvqoAeGz5Kdft2ShdvagfCoiaoPaTpxqjvtA4ImaLk6hbkVgu
 //$db = $conn->BOTLINE;
 
 // access collection
-$collection = $db->CMD;
+//$collection = $db->CMD;
 
 
 // Get POST body content
